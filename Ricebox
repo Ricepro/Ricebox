@@ -1,0 +1,6086 @@
+-- Gui to Lua
+-- Version: 3.1
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local exectab = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextBox = Instance.new("TextBox")
+local Execute = Instance.new("TextButton")
+local clear = Instance.new("TextButton")
+local page1 = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local TextButton_11 = Instance.new("TextButton")
+local TextButton_12 = Instance.new("TextButton")
+local TextButton_13 = Instance.new("TextButton")
+local TextButton_14 = Instance.new("TextButton")
+local TextButton_15 = Instance.new("TextButton")
+local TextButton_16 = Instance.new("TextButton")
+local TextButton_17 = Instance.new("TextButton")
+local TextButton_18 = Instance.new("TextButton")
+local TextButton_19 = Instance.new("TextButton")
+local TextButton_20 = Instance.new("TextButton")
+local TextButton_21 = Instance.new("TextButton")
+local TextButton_22 = Instance.new("TextButton")
+local TextButton_23 = Instance.new("TextButton")
+local TextButton_24 = Instance.new("TextButton")
+local TextButton_25 = Instance.new("TextButton")
+local TextButton_26 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_27 = Instance.new("TextButton")
+local credits = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_28 = Instance.new("TextButton")
+local gpage1 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton_29 = Instance.new("TextButton")
+local TextButton_30 = Instance.new("TextButton")
+local TextButton_31 = Instance.new("TextButton")
+local TextButton_32 = Instance.new("TextButton")
+local TextButton_33 = Instance.new("TextButton")
+local TextButton_34 = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.228593871, 0, 0.347878814, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 744, 0, 432)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Size = UDim2.new(0, 744, 0, 6)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(170, 0, 0)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.0107526882, 0, 0.0439814813, 0)
+TextButton.Size = UDim2.new(0, 92, 0, 50)
+TextButton.Font = Enum.Font.Oswald
+TextButton.Text = "Executor"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 20.000
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_2.BorderSizePixel = 3
+TextButton_2.Position = UDim2.new(0.0107526882, 0, 0.196759254, 0)
+TextButton_2.Size = UDim2.new(0, 92, 0, 50)
+TextButton_2.Font = Enum.Font.Oswald
+TextButton_2.Text = "Script hub p1"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 20.000
+
+exectab.Name = "exectab"
+exectab.Parent = Frame
+exectab.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+exectab.Position = UDim2.new(0.151881725, 0, 0.0439814813, 0)
+exectab.Size = UDim2.new(0, 624, 0, 404)
+exectab.Visible = false
+
+ScrollingFrame.Parent = exectab
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.Size = UDim2.new(0, 624, 0, 359)
+
+TextBox.Parent = ScrollingFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Size = UDim2.new(0, 610, 0, 359)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.MultiLine = true
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+Execute.Name = "Execute"
+Execute.Parent = exectab
+Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderColor3 = Color3.fromRGB(170, 0, 0)
+Execute.BorderSizePixel = 3
+Execute.Position = UDim2.new(0.0251757801, 0, 0.909630597, 0)
+Execute.Size = UDim2.new(0, 116, 0, 28)
+Execute.Font = Enum.Font.Oswald
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 20.000
+Execute.MouseButton1Down:connect(function() 
+	loadstring(TextBox.Text)()
+end)
+
+clear.Name = "clear"
+clear.Parent = exectab
+clear.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+clear.BorderColor3 = Color3.fromRGB(170, 0, 0)
+clear.BorderSizePixel = 3
+clear.Position = UDim2.new(0.796009123, 0, 0.909630597, 0)
+clear.Size = UDim2.new(0, 116, 0, 28)
+clear.Font = Enum.Font.Oswald
+clear.Text = "Clear"
+clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+clear.TextSize = 20.000
+clear.MouseButton1Down:connect(function() 
+	TextBox.Text = ""
+end)
+
+page1.Name = "page1"
+page1.Parent = Frame
+page1.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+page1.Position = UDim2.new(0.151881725, 0, 0.0439814813, 0)
+page1.Size = UDim2.new(0, 624, 0, 403)
+page1.Visible = false
+
+TextButton_3.Parent = page1
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 3
+TextButton_3.Position = UDim2.new(0.012820513, 0, 0.0173697267, 0)
+TextButton_3.Size = UDim2.new(0, 117, 0, 50)
+TextButton_3.Font = Enum.Font.Ubuntu
+TextButton_3.Text = "Infinity Yeild"
+TextButton_3.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = page1
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 3
+TextButton_4.Position = UDim2.new(0.211538464, 0, 0.0173697267, 0)
+TextButton_4.Size = UDim2.new(0, 117, 0, 50)
+TextButton_4.Font = Enum.Font.Ubuntu
+TextButton_4.Text = "Owl Hub"
+TextButton_4.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_4.TextSize = 14.000
+
+TextButton_5.Parent = page1
+TextButton_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 3
+TextButton_5.Position = UDim2.new(0.411000013, 0, 0.0170000009, 0)
+TextButton_5.Size = UDim2.new(0, 117, 0, 50)
+TextButton_5.Font = Enum.Font.Ubuntu
+TextButton_5.Text = "Revis Admin"
+TextButton_5.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_5.TextSize = 14.000
+
+TextButton_6.Parent = page1
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 3
+TextButton_6.Position = UDim2.new(0.610000014, 0, 0.0170000009, 0)
+TextButton_6.Size = UDim2.new(0, 117, 0, 50)
+TextButton_6.Font = Enum.Font.Ubuntu
+TextButton_6.Text = "Phantom Hub"
+TextButton_6.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_6.TextSize = 14.000
+
+TextButton_7.Parent = page1
+TextButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 3
+TextButton_7.Position = UDim2.new(0.809000015, 0, 0.0170000009, 0)
+TextButton_7.Size = UDim2.new(0, 117, 0, 50)
+TextButton_7.Font = Enum.Font.Ubuntu
+TextButton_7.Text = "Sanity Hub"
+TextButton_7.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_7.TextSize = 14.000
+
+TextButton_8.Parent = page1
+TextButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 3
+TextButton_8.Position = UDim2.new(0.012820513, 0, 0.163771719, 0)
+TextButton_8.Size = UDim2.new(0, 117, 0, 50)
+TextButton_8.Font = Enum.Font.Ubuntu
+TextButton_8.Text = "Dark Hub"
+TextButton_8.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_8.TextSize = 14.000
+
+TextButton_9.Parent = page1
+TextButton_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 3
+TextButton_9.Position = UDim2.new(0.0130000003, 0, 0.31099999, 0)
+TextButton_9.Size = UDim2.new(0, 117, 0, 50)
+TextButton_9.Font = Enum.Font.Ubuntu
+TextButton_9.Text = "Pumpkin Hub"
+TextButton_9.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_9.TextSize = 14.000
+
+TextButton_10.Parent = page1
+TextButton_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.BorderSizePixel = 3
+TextButton_10.Position = UDim2.new(0.0130000003, 0, 0.458000004, 0)
+TextButton_10.Size = UDim2.new(0, 117, 0, 50)
+TextButton_10.Font = Enum.Font.Ubuntu
+TextButton_10.Text = "AspectHUB Free Ver"
+TextButton_10.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_10.TextSize = 14.000
+
+TextButton_11.Parent = page1
+TextButton_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_11.BorderSizePixel = 3
+TextButton_11.Position = UDim2.new(0.0130000003, 0, 0.605000019, 0)
+TextButton_11.Size = UDim2.new(0, 117, 0, 50)
+TextButton_11.Font = Enum.Font.Ubuntu
+TextButton_11.Text = "Cum Hub"
+TextButton_11.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_11.TextSize = 14.000
+
+TextButton_12.Parent = page1
+TextButton_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.BorderSizePixel = 3
+TextButton_12.Position = UDim2.new(0.0130000003, 0, 0.751999974, 0)
+TextButton_12.Size = UDim2.new(0, 117, 0, 50)
+TextButton_12.Font = Enum.Font.Ubuntu
+TextButton_12.Text = "Panda Blue"
+TextButton_12.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_12.TextSize = 14.000
+
+TextButton_13.Parent = page1
+TextButton_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_13.BorderSizePixel = 3
+TextButton_13.Position = UDim2.new(0.211538464, 0, 0.163771719, 0)
+TextButton_13.Size = UDim2.new(0, 117, 0, 50)
+TextButton_13.Font = Enum.Font.Ubuntu
+TextButton_13.Text = "Fates Admin"
+TextButton_13.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_13.TextSize = 14.000
+
+TextButton_14.Parent = page1
+TextButton_14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_14.BorderSizePixel = 3
+TextButton_14.Position = UDim2.new(0.410256416, 0, 0.163771719, 0)
+TextButton_14.Size = UDim2.new(0, 117, 0, 50)
+TextButton_14.Font = Enum.Font.Ubuntu
+TextButton_14.Text = "CMD-X"
+TextButton_14.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_14.TextSize = 14.000
+
+TextButton_15.Parent = page1
+TextButton_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_15.BorderSizePixel = 3
+TextButton_15.Position = UDim2.new(0.608974397, 0, 0.163771719, 0)
+TextButton_15.Size = UDim2.new(0, 117, 0, 50)
+TextButton_15.Font = Enum.Font.Ubuntu
+TextButton_15.Text = "Project Evolution"
+TextButton_15.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_15.TextSize = 14.000
+
+TextButton_16.Parent = page1
+TextButton_16.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_16.BorderSizePixel = 3
+TextButton_16.Position = UDim2.new(0.807692289, 0, 0.163771719, 0)
+TextButton_16.Size = UDim2.new(0, 117, 0, 50)
+TextButton_16.Font = Enum.Font.Ubuntu
+TextButton_16.Text = "Hades Hub"
+TextButton_16.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_16.TextSize = 14.000
+
+TextButton_17.Parent = page1
+TextButton_17.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_17.BorderSizePixel = 3
+TextButton_17.Position = UDim2.new(0.807692349, 0, 0.751861036, 0)
+TextButton_17.Size = UDim2.new(0, 117, 0, 50)
+TextButton_17.Font = Enum.Font.Ubuntu
+TextButton_17.Text = "V.G HUB"
+TextButton_17.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_17.TextSize = 14.000
+
+TextButton_18.Parent = page1
+TextButton_18.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_18.BorderSizePixel = 3
+TextButton_18.Position = UDim2.new(0.608974397, 0, 0.751861036, 0)
+TextButton_18.Size = UDim2.new(0, 117, 0, 50)
+TextButton_18.Font = Enum.Font.Ubuntu
+TextButton_18.Text = "Fusion Hub"
+TextButton_18.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_18.TextSize = 14.000
+
+TextButton_19.Parent = page1
+TextButton_19.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_19.BorderSizePixel = 3
+TextButton_19.Position = UDim2.new(0.410256416, 0, 0.751861036, 0)
+TextButton_19.Size = UDim2.new(0, 117, 0, 50)
+TextButton_19.Font = Enum.Font.Ubuntu
+TextButton_19.Text = "Moonhub"
+TextButton_19.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_19.TextSize = 14.000
+
+TextButton_20.Parent = page1
+TextButton_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_20.BorderSizePixel = 3
+TextButton_20.Position = UDim2.new(0.807692349, 0, 0.31017369, 0)
+TextButton_20.Size = UDim2.new(0, 117, 0, 50)
+TextButton_20.Font = Enum.Font.Ubuntu
+TextButton_20.Text = "Void Hub V3"
+TextButton_20.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_20.TextSize = 14.000
+
+TextButton_21.Parent = page1
+TextButton_21.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_21.BorderSizePixel = 3
+TextButton_21.Position = UDim2.new(0.211538464, 0, 0.751861036, 0)
+TextButton_21.Size = UDim2.new(0, 117, 0, 50)
+TextButton_21.Font = Enum.Font.Ubuntu
+TextButton_21.Text = "Sleazy Hub"
+TextButton_21.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_21.TextSize = 14.000
+
+TextButton_22.Parent = page1
+TextButton_22.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_22.BorderSizePixel = 3
+TextButton_22.Position = UDim2.new(0.807692349, 0, 0.602977693, 0)
+TextButton_22.Size = UDim2.new(0, 117, 0, 50)
+TextButton_22.Font = Enum.Font.Ubuntu
+TextButton_22.Text = "Trolling Gui"
+TextButton_22.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_22.TextSize = 14.000
+
+TextButton_23.Parent = page1
+TextButton_23.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_23.BorderSizePixel = 3
+TextButton_23.Position = UDim2.new(0.608974397, 0, 0.602977693, 0)
+TextButton_23.Size = UDim2.new(0, 117, 0, 50)
+TextButton_23.Font = Enum.Font.Ubuntu
+TextButton_23.Text = "Snif Hub"
+TextButton_23.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_23.TextSize = 14.000
+
+TextButton_24.Parent = page1
+TextButton_24.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_24.BorderSizePixel = 3
+TextButton_24.Position = UDim2.new(0.807692349, 0, 0.456575662, 0)
+TextButton_24.Size = UDim2.new(0, 117, 0, 50)
+TextButton_24.Font = Enum.Font.Ubuntu
+TextButton_24.Text = "Snow Hub"
+TextButton_24.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_24.TextSize = 14.000
+
+TextButton_25.Parent = page1
+TextButton_25.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_25.BorderSizePixel = 3
+TextButton_25.Position = UDim2.new(0.211538464, 0, 0.602977693, 0)
+TextButton_25.Size = UDim2.new(0, 117, 0, 50)
+TextButton_25.Font = Enum.Font.Ubuntu
+TextButton_25.Text = "Dababy Hub"
+TextButton_25.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_25.TextSize = 14.000
+
+TextButton_26.Parent = page1
+TextButton_26.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_26.BorderSizePixel = 3
+TextButton_26.Position = UDim2.new(0.410256416, 0, 0.602977693, 0)
+TextButton_26.Size = UDim2.new(0, 117, 0, 50)
+TextButton_26.Font = Enum.Font.Ubuntu
+TextButton_26.Text = "Universal esp"
+TextButton_26.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_26.TextSize = 14.000
+
+TextLabel_2.Parent = page1
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextLabel_2.Position = UDim2.new(0.224358976, 0, 0.387096763, 0)
+TextLabel_2.Size = UDim2.new(0, 343, 0, 50)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "Script Hub: Page 1"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 44.000
+
+TextButton_27.Parent = Frame
+TextButton_27.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_27.BorderColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_27.BorderSizePixel = 3
+TextButton_27.Position = UDim2.new(0.0107526882, 0, 0.858796239, 0)
+TextButton_27.Size = UDim2.new(0, 92, 0, 50)
+TextButton_27.Font = Enum.Font.Oswald
+TextButton_27.Text = "Credits"
+TextButton_27.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_27.TextSize = 20.000
+
+credits.Name = "credits"
+credits.Parent = Frame
+credits.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+credits.Position = UDim2.new(0.151881725, 0, 0.0439814813, 0)
+credits.Size = UDim2.new(0, 624, 0, 404)
+credits.Visible = false
+
+TextLabel_3.Parent = credits
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.0860606283, 0)
+TextLabel_3.Size = UDim2.new(0, 623, 0, 50)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "Made By RiceNice or Kapomlg"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 32.000
+
+ImageLabel.Parent = credits
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.1875, 0, 0.225247532, 0)
+ImageLabel.Size = UDim2.new(0, 385, 0, 219)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7553245244"
+
+TextLabel_4.Parent = credits
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0, 0, 0.786555707, 0)
+TextLabel_4.Size = UDim2.new(0, 623, 0, 50)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "\"ez\""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 47.000
+
+TextButton_28.Parent = Frame
+TextButton_28.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_28.BorderColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_28.BorderSizePixel = 3
+TextButton_28.Position = UDim2.new(0.0109999999, 0, 0.349999994, 0)
+TextButton_28.Size = UDim2.new(0, 92, 0, 50)
+TextButton_28.Font = Enum.Font.Oswald
+TextButton_28.Text = "Game Hub"
+TextButton_28.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_28.TextSize = 20.000
+
+gpage1.Name = "gpage1"
+gpage1.Parent = Frame
+gpage1.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+gpage1.Position = UDim2.new(0.151881725, 0, 0.0439814813, 0)
+gpage1.Size = UDim2.new(0, 624, 0, 403)
+
+TextLabel_5.Parent = gpage1
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextLabel_5.Size = UDim2.new(0, 624, 0, 50)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "This game is not supportet"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 44.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_29.Parent = gpage1
+TextButton_29.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_29.BorderSizePixel = 3
+TextButton_29.Position = UDim2.new(0.0160256419, 0, 0.138957813, 0)
+TextButton_29.Size = UDim2.new(0, 248, 0, 50)
+TextButton_29.Visible = false
+TextButton_29.Font = Enum.Font.Ubuntu
+TextButton_29.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_29.TextSize = 14.000
+
+TextButton_30.Parent = gpage1
+TextButton_30.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_30.BorderSizePixel = 3
+TextButton_30.Position = UDim2.new(0.588141024, 0, 0.138957813, 0)
+TextButton_30.Size = UDim2.new(0, 248, 0, 50)
+TextButton_30.Visible = false
+TextButton_30.Font = Enum.Font.Ubuntu
+TextButton_30.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_30.TextSize = 14.000
+
+TextButton_31.Parent = gpage1
+TextButton_31.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_31.BorderSizePixel = 3
+TextButton_31.Position = UDim2.new(0.0160256419, 0, 0.287841201, 0)
+TextButton_31.Size = UDim2.new(0, 248, 0, 50)
+TextButton_31.Visible = false
+TextButton_31.Font = Enum.Font.Ubuntu
+TextButton_31.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_31.TextSize = 14.000
+
+TextButton_32.Parent = gpage1
+TextButton_32.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_32.BorderSizePixel = 3
+TextButton_32.Position = UDim2.new(0.588141024, 0, 0.287841201, 0)
+TextButton_32.Size = UDim2.new(0, 248, 0, 50)
+TextButton_32.Visible = false
+TextButton_32.Font = Enum.Font.Ubuntu
+TextButton_32.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_32.TextSize = 14.000
+
+TextButton_33.Parent = gpage1
+TextButton_33.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_33.BorderSizePixel = 3
+TextButton_33.Position = UDim2.new(0.0160256419, 0, 0.436724573, 0)
+TextButton_33.Size = UDim2.new(0, 248, 0, 50)
+TextButton_33.Visible = false
+TextButton_33.Font = Enum.Font.Ubuntu
+TextButton_33.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_33.TextSize = 14.000
+
+TextButton_34.Parent = gpage1
+TextButton_34.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_34.BorderSizePixel = 3
+TextButton_34.Position = UDim2.new(0.588141024, 0, 0.436724544, 0)
+TextButton_34.Size = UDim2.new(0, 248, 0, 50)
+TextButton_34.Visible = false
+TextButton_34.Font = Enum.Font.Ubuntu
+TextButton_34.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_34.TextSize = 14.000
+
+TextLabel_6.Parent = ScreenGui
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.421052635, 0, 0.038787879, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.Ubuntu
+TextLabel_6.Text = "Reybox"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextSize = 47.000
+
+TextLabel_7.Parent = ScreenGui
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.421052635, 0, 0.0860605985, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_7.Font = Enum.Font.Ubuntu
+TextLabel_7.Text = "all you need in one box"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextSize = 32.000
+
+TextLabel_8.Parent = ScreenGui
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.421052635, 0, 0.128484845, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_8.Font = Enum.Font.Ubuntu
+TextLabel_8.Text = "V1.0"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.TextSize = 23.000
+
+Frame_2.Parent = ScreenGui
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BackgroundTransparency = 0.750
+Frame_2.Position = UDim2.new(0.921445429, 0, 0.0969697386, 0)
+Frame_2.Size = UDim2.new(0, 100, 0, 100)
+
+TextLabel_9.Parent = Frame_2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0, 0, 0.2190741, 0)
+TextLabel_9.Size = UDim2.new(0, 100, 0, 50)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Reybox is loaded"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.TextSize = 14.000
+
+TextLabel_10.Parent = Frame_2
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.Position = UDim2.new(-1.52736902e-07, 0, 0, 0)
+TextLabel_10.Size = UDim2.new(0, 100, 0, 6)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = ""
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.TextSize = 14.000
+
+TextLabel_11.Parent = Frame_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.Position = UDim2.new(-1.52736902e-07, 0, 0.949999988, 0)
+TextLabel_11.Size = UDim2.new(0, 100, 0, 6)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = ""
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.TextSize = 14.000
+
+-- Scripts:
+
+local function TKTHQLN_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	while true do
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(TKTHQLN_fake_script)()
+local function MVIGAQG_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(MVIGAQG_fake_script)()
+local function UTIK_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+	local Open = false
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			if Open then
+				script.Parent.Visible = true
+				Open = false
+			else
+				Open = true
+				script.Parent.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(UTIK_fake_script)()
+local function THRRRFP_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(THRRRFP_fake_script)()
+local function ZVQAPB_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ZVQAPB_fake_script)()
+local function LLJCCA_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.exectab.Visible = true
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.credits.Visible = false
+		script.Parent.Parent.gpage1.Visible = false
+		script.Parent.Parent.hub.Visible = false
+		script.Parent.Parent.sup.Visible = false
+	end)
+	
+end
+coroutine.wrap(LLJCCA_fake_script)()
+local function ETRR_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ETRR_fake_script)()
+local function YCYPZYQ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(YCYPZYQ_fake_script)()
+local function ERMR_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.exectab.Visible = false
+		script.Parent.Parent.page1.Visible = true
+		script.Parent.Parent.credits.Visible = false
+		script.Parent.Parent.gpage1.Visible = false
+		script.Parent.Parent.hub.Visible = false
+		script.Parent.Parent.sup.Visible = false
+	end)
+	
+end
+coroutine.wrap(ERMR_fake_script)()
+local function CZQVKK_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(CZQVKK_fake_script)()
+local function ZIIJTHS_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ZIIJTHS_fake_script)()
+local function UKPBK_fake_script() -- clear.LocalScript 
+	local script = Instance.new('LocalScript', clear)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(UKPBK_fake_script)()
+local function KZNJQXQ_fake_script() -- clear.LocalScript 
+	local script = Instance.new('LocalScript', clear)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(KZNJQXQ_fake_script)()
+local function XDMP_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(XDMP_fake_script)()
+local function RZTMTU_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(RZTMTU_fake_script)()
+local function VBNIF_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+	
+	
+end
+coroutine.wrap(VBNIF_fake_script)()
+local function LOYQO_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(LOYQO_fake_script)()
+local function LUCTXT_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(LUCTXT_fake_script)()
+local function ZNMJ_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+	end)
+	
+end
+coroutine.wrap(ZNMJ_fake_script)()
+local function MRUZO_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(MRUZO_fake_script)()
+local function TXVR_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(TXVR_fake_script)()
+local function NOJPSS_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/Caniwq2N"))()
+	end)
+	
+end
+coroutine.wrap(NOJPSS_fake_script)()
+local function ETPKIEF_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ETPKIEF_fake_script)()
+local function FQFNIF_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(FQFNIF_fake_script)()
+local function KTPZPRJ_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/UmhaEvTT"))()
+	end)
+	
+end
+coroutine.wrap(KTPZPRJ_fake_script)()
+local function IFKBHM_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(IFKBHM_fake_script)()
+local function DJPTQH_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(DJPTQH_fake_script)()
+local function SYYX_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://sanityvanity.000webhostapp.com/SanityHub.lua"))()
+	end)
+	
+end
+coroutine.wrap(SYYX_fake_script)()
+local function NBTCE_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(NBTCE_fake_script)()
+local function EPSKJ_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(EPSKJ_fake_script)()
+local function VWQIRLF_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init"))()
+	end)
+	
+end
+coroutine.wrap(VWQIRLF_fake_script)()
+local function YPAEXDW_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(YPAEXDW_fake_script)()
+local function PUOU_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(PUOU_fake_script)()
+local function WAVC_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/pumpkinware/main/main/.lua"))()
+	end)
+	
+end
+coroutine.wrap(WAVC_fake_script)()
+local function OXHJJR_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(OXHJJR_fake_script)()
+local function VOGKKIZ_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(VOGKKIZ_fake_script)()
+local function WHDNX_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://jbleb.wz.cz/cssx/dddd.txt"))()
+	end)
+end
+coroutine.wrap(WHDNX_fake_script)()
+local function HBYJYWC_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(HBYJYWC_fake_script)()
+local function OAJI_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(OAJI_fake_script)()
+local function YARFAIA_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://git.io/JsdaQ"))()
+	end)
+	
+end
+coroutine.wrap(YARFAIA_fake_script)()
+local function QBWDMU_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(QBWDMU_fake_script)()
+local function GIXHKYS_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(GIXHKYS_fake_script)()
+local function YVLGF_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("http://jbleb.wz.cz/cssx/eexexee.txt"))()
+	end)
+	
+end
+coroutine.wrap(YVLGF_fake_script)()
+local function SCVZ_fake_script() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_13)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(SCVZ_fake_script)()
+local function MKUGG_fake_script() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_13)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(MKUGG_fake_script)()
+local function OGGJEJP_fake_script() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_13)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+	end)
+	
+end
+coroutine.wrap(OGGJEJP_fake_script)()
+local function PKBRKT_fake_script() -- TextButton_14.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_14)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(PKBRKT_fake_script)()
+local function ZTHMJ_fake_script() -- TextButton_14.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_14)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ZTHMJ_fake_script)()
+local function YZGOBJE_fake_script() -- TextButton_14.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_14)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()
+	end)
+	
+end
+coroutine.wrap(YZGOBJE_fake_script)()
+local function DYUEDF_fake_script() -- TextButton_15.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_15)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(DYUEDF_fake_script)()
+local function ZORCPW_fake_script() -- TextButton_15.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_15)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ZORCPW_fake_script)()
+local function PNFYRX_fake_script() -- TextButton_15.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_15)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+	end)
+	
+end
+coroutine.wrap(PNFYRX_fake_script)()
+local function IXGMS_fake_script() -- TextButton_16.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_16)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(IXGMS_fake_script)()
+local function JLXVUAX_fake_script() -- TextButton_16.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_16)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(JLXVUAX_fake_script)()
+local function UGSM_fake_script() -- TextButton_16.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_16)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Soffware/3kTMd/main/HadesHub.lua"))()
+	end)
+	
+end
+coroutine.wrap(UGSM_fake_script)()
+local function GEEYYMJ_fake_script() -- TextButton_17.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_17)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(GEEYYMJ_fake_script)()
+local function JYUSPW_fake_script() -- TextButton_17.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_17)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(JYUSPW_fake_script)()
+local function MKCDMIL_fake_script() -- TextButton_17.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_17)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub"))()
+	end)
+	
+end
+coroutine.wrap(MKCDMIL_fake_script)()
+local function DAGHEJ_fake_script() -- TextButton_18.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_18)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(DAGHEJ_fake_script)()
+local function PCMHG_fake_script() -- TextButton_18.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_18)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(PCMHG_fake_script)()
+local function WDLZURF_fake_script() -- TextButton_18.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_18)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/Fusion-Hub/main/Main.lua"))()
+	end)
+	
+	
+end
+coroutine.wrap(WDLZURF_fake_script)()
+local function WAYXS_fake_script() -- TextButton_19.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_19)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(WAYXS_fake_script)()
+local function HCFNH_fake_script() -- TextButton_19.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_19)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(HCFNH_fake_script)()
+local function NXAWH_fake_script() -- TextButton_19.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_19)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/moonhubloader/system/main/authenticator.lua"))()
+	end)
+	
+end
+coroutine.wrap(NXAWH_fake_script)()
+local function CJKD_fake_script() -- TextButton_20.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_20)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(CJKD_fake_script)()
+local function MZDX_fake_script() -- TextButton_20.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_20)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(MZDX_fake_script)()
+local function TATY_fake_script() -- TextButton_20.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_20)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/V-0ID/V-0ID/main/VoidHubV3"))()
+	end)
+end
+coroutine.wrap(TATY_fake_script)()
+local function HQXTGUC_fake_script() -- TextButton_21.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_21)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(HQXTGUC_fake_script)()
+local function RQJD_fake_script() -- TextButton_21.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_21)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(RQJD_fake_script)()
+local function HNGNJ_fake_script() -- TextButton_21.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_21)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/sleazy112/Sleazyhub/main/hub"))()
+	end)
+	
+end
+coroutine.wrap(HNGNJ_fake_script)()
+local function RYDEKL_fake_script() -- TextButton_22.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_22)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(RYDEKL_fake_script)()
+local function TLLJE_fake_script() -- TextButton_22.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_22)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(TLLJE_fake_script)()
+local function LMEFT_fake_script() -- TextButton_22.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_22)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
+	end)
+	
+end
+coroutine.wrap(LMEFT_fake_script)()
+local function CCQLKQ_fake_script() -- TextButton_23.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_23)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(CCQLKQ_fake_script)()
+local function GULNY_fake_script() -- TextButton_23.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_23)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(GULNY_fake_script)()
+local function ZGKFW_fake_script() -- TextButton_23.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_23)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/Sniff-Hub/main/Sniff%20Hub"))()
+	end)
+	
+end
+coroutine.wrap(ZGKFW_fake_script)()
+local function VOYL_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(VOYL_fake_script)()
+local function WULNLZG_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(WULNLZG_fake_script)()
+local function UZSYRII_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://snowhub.dev/script.lua"))()
+	end)
+	
+end
+coroutine.wrap(UZSYRII_fake_script)()
+local function FWKSXVY_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(FWKSXVY_fake_script)()
+local function DFSGC_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(DFSGC_fake_script)()
+local function XAXWYK_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://git.io/J3bXI"))()
+	end)
+	
+end
+coroutine.wrap(XAXWYK_fake_script)()
+local function DEONN_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(DEONN_fake_script)()
+local function LWSX_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(LWSX_fake_script)()
+local function KOUWLF_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
+
+	script.Parent.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/cheatx/main/cheatx%20loader"))()
+	end)
+	
+end
+coroutine.wrap(KOUWLF_fake_script)()
+local function ZKGYXMJ_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ZKGYXMJ_fake_script)()
+local function YRBEQUP_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+	script.Parent.Visible = false
+	
+	
+end
+coroutine.wrap(YRBEQUP_fake_script)()
+local function BDAEAU_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(BDAEAU_fake_script)()
+local function YUKJSC_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(YUKJSC_fake_script)()
+local function DEUTQI_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.exectab.Visible = false
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.credits.Visible = true
+		script.Parent.Parent.gpage1.Visible = false
+		script.Parent.Parent.hub.Visible = false
+		script.Parent.Parent.sup.Visible = false
+	end)
+	
+end
+coroutine.wrap(DEUTQI_fake_script)()
+local function TJIVBW_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+	
+end
+coroutine.wrap(TJIVBW_fake_script)()
+local function IYQFRDJ_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	local Open = false
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			if Open then
+				script.Parent.Visible = true
+				Open = false
+			else
+				Open = true
+				script.Parent.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(IYQFRDJ_fake_script)()
+local function UOAZU_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	script.Parent.Visible = false
+	
+end
+coroutine.wrap(UOAZU_fake_script)()
+local function RBWWO_fake_script() -- TextLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_4)
+
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+	
+end
+coroutine.wrap(RBWWO_fake_script)()
+local function DSHG_fake_script() -- TextLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_4)
+
+	local Open = false
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			if Open then
+				script.Parent.Visible = true
+				Open = false
+			else
+				Open = true
+				script.Parent.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(DSHG_fake_script)()
+local function TWZCTN_fake_script() -- TextLabel_4.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_4)
+
+	script.Parent.Visible = false
+	
+end
+coroutine.wrap(TWZCTN_fake_script)()
+local function IUXFMP_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait(2)
+	local function callback(Text)
+		if Text == "Close" then
+			print ("closed")
+		elseif Text == ("Button2 text") then
+			print ("Answer2")
+		end
+	end
+	
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "ReyBox";
+		Text = "Succesfully injected....";
+	
+		Duration = 5;
+		
+	
+		Callback = NotificationBindable;
+	})
+	
+end
+coroutine.wrap(IUXFMP_fake_script)()
+local function JIEUG_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait(2)
+	local function callback(Text)
+		if Text == "Close" then
+			print ("closed")
+		elseif Text == ("Button2 text") then
+			print ("Answer2")
+		end
+	end
+	
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "ReyBox";
+		Text = "press p open/close";
+	
+		Duration = 5;
+	
+	
+		Callback = NotificationBindable;
+	})
+	
+end
+coroutine.wrap(JIEUG_fake_script)()
+local function AHVCE_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(AHVCE_fake_script)()
+local function QTIB_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(QTIB_fake_script)()
+local function SKNO_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.exectab.Visible = false
+		script.Parent.Parent.gpage1.Visible = true
+		script.Parent.Parent.credits.Visible = false
+		script.Parent.Parent.page1.Visible = false
+		script.Parent.Parent.hub.Visible = false
+		script.Parent.Parent.sup.Visible = false
+	end)
+	
+end
+coroutine.wrap(SKNO_fake_script)()
+local function BOUB_fake_script() -- TextLabel_5.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_5)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(BOUB_fake_script)()
+local function HNPRMVX_fake_script() -- TextLabel_5.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_5)
+
+	if game.PlaceId == 155615604 then
+		script.Parent.Text = "Prison Life"
+	end
+	
+	if game.PlaceId == 3587619225 then
+		script.Parent.Text = "Mega Easy Obby 🌟 725 Stages!"
+	end
+	
+	if game.PlaceId == 286090429 then
+		script.Parent.Text = "Arsenal"
+	end
+	
+	if game.PlaceId == 292439477 then
+		script.Parent.Text = "Phantom Forcess"
+	end
+end
+coroutine.wrap(HNPRMVX_fake_script)()
+local function OTAPD_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(OTAPD_fake_script)()
+local function HERQEH_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(HERQEH_fake_script)()
+local function NJTL_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
+
+	if game.PlaceId == 155615604 then
+		script.Parent.Visible = true
+		script.Parent.Text = "give all weapon"
+		script.Parent.MouseButton1Down:connect(function()
+			local args = {
+				[1] = workspace.Prison_ITEMS.giver:FindFirstChild("M9").ITEMPICKUP
+			}
+	
+			workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+			
+			local args = {
+				[1] = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP
+			}
+	
+			workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+			
+			-- Script generated by SimpleSpy - credits to exx#9394
+	
+			local args = {
+				[1] = workspace.Prison_ITEMS.giver:FindFirstChild("AK-47").ITEMPICKUP
+			}
+	
+			workspace.Remote.ItemHandler:InvokeServer(unpack(args))
+	
+		end)
+	end
+	
+	if game.PlaceId == 3587619225 then
+		script.Parent.Visible = true
+		script.Parent.Text = "Skip all levels"
+		script.Parent.MouseButton1Down:connect(function()
+			loadstring(game:HttpGet'https://pastebin.com/raw/Nv89Cn5d')()
+		end)
+	end
+	
+	if game.PlaceId == 286090429 then
+		script.Parent.Visible = true
+		script.Parent.Text = "Aimbot e key "
+		script.Parent.MouseButton1Down:connect(function()
+			loadstring(game:HttpGet(('https://pastebin.com/raw/mSwLvQJW'), true))()
+		end)
+	end
+	
+	if game.PlaceId == 292439477 then
+		script.Parent.Visible = true
+		script.Parent.Text = "Dark hub"
+		script.Parent.MouseButton1Down:connect(function()
+			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+		end)
+	end
+end
+coroutine.wrap(NJTL_fake_script)()
+local function JHDAQS_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(JHDAQS_fake_script)()
+local function WJLBIXS_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(WJLBIXS_fake_script)()
+local function LCMC_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
+
+	if game.PlaceId == 155615604 then
+		script.Parent.Visible = true
+		script.Parent.Text = "ESP"
+		script.Parent.MouseButton1Down:connect(function()
+	
+			local Player = game:GetService("Players").LocalPlayer
+			local Camera = game:GetService("Workspace").CurrentCamera
+			local Mouse = Player:GetMouse()
+	
+			local function Dist(pointA, pointB) -- magnitude errors for some reason  : (
+				return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
+			end
+	
+			local function GetClosest(points, dest)
+				local min  = math.huge 
+				local closest = nil
+				for _,v in pairs(points) do
+					local dist = Dist(v, dest)
+					if dist < min then
+						min = dist
+						closest = v
+					end
+				end
+				return closest
+			end
+	
+			local function DrawESP(plr)
+				local Box = Drawing.new("Quad")
+				Box.Visible = false
+				Box.PointA = Vector2.new(0, 0)
+				Box.PointB = Vector2.new(0, 0)
+				Box.PointC = Vector2.new(0, 0)
+				Box.PointD = Vector2.new(0, 0)
+				Box.Color = Color3.fromRGB(255, 0, 0)
+				Box.Thickness = 2
+				Box.Transparency = 1
+	
+				local function Update()
+					local c
+					c = game:GetService("RunService").RenderStepped:Connect(function()
+						if plr.Character ~= nil and plr.Character:FindFirstChildOfClass("Humanoid") ~= nil and plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and plr.Character:FindFirstChildOfClass("Humanoid").Health > 0 and plr.Character:FindFirstChild("Head") ~= nil then
+							local pos, vis = Camera:WorldToViewportPoint(plr.Character.HumanoidRootPart.Position)
+							if vis then 
+								local points = {}
+								local c = 0
+								for _,v in pairs(plr.Character:GetChildren()) do
+									if v:IsA("BasePart") then
+										c = c + 1
+										local p = Camera:WorldToViewportPoint(v.Position)
+										if v.Name == "HumanoidRootPart" then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, 0, -v.Size.Z)).p)
+										elseif v.Name == "Head" then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, v.Size.Y/2, v.Size.Z/1.25)).p)
+										elseif string.match(v.Name, "Left") then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(-v.Size.X/2, 0, 0)).p)
+										elseif string.match(v.Name, "Right") then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(v.Size.X/2, 0, 0)).p)
+										end
+										points[c] = p
+									end
+								end
+								local Left = GetClosest(points, Vector2.new(0, pos.Y))
+								local Right = GetClosest(points, Vector2.new(Camera.ViewportSize.X, pos.Y))
+								local Top = GetClosest(points, Vector2.new(pos.X, 0))
+								local Bottom = GetClosest(points, Vector2.new(pos.X, Camera.ViewportSize.Y))
+	
+								if Left ~= nil and Right ~= nil and Top ~= nil and Bottom ~= nil then
+									Box.PointA = Vector2.new(Right.X, Top.Y)
+									Box.PointB = Vector2.new(Left.X, Top.Y)
+									Box.PointC = Vector2.new(Left.X, Bottom.Y)
+									Box.PointD = Vector2.new(Right.X, Bottom.Y)
+	
+									Box.Visible = true
+								else 
+									Box.Visible = false
+								end
+							else 
+								Box.Visible = false
+							end
+						else
+							Box.Visible = false
+							if game.Players:FindFirstChild(plr.Name) == nil then
+								c:Disconnect()
+							end
+						end
+					end)
+				end
+				coroutine.wrap(Update)()
+			end
+	
+			for _,v in pairs(game:GetService("Players"):GetChildren()) do
+				if v.Name ~= Player.Name then 
+					DrawESP(v)
+				end
+			end
+	
+			game:GetService("Players").PlayerAdded:Connect(function(v)
+				DrawESP(v)
+			end)
+	
+		end)
+	end
+	
+	if game.PlaceId == 3587619225 then
+		script.Parent.Visible = false
+	end
+	
+	if game.PlaceId == 286090429 then
+		script.Parent.Visible = true
+		script.Parent.Text = "ESP"
+		script.Parent.MouseButton1Down:connect(function()
+			
+			local Player = game:GetService("Players").LocalPlayer
+			local Camera = game:GetService("Workspace").CurrentCamera
+			local Mouse = Player:GetMouse()
+	
+			local function Dist(pointA, pointB) -- magnitude errors for some reason  : (
+				return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
+			end
+	
+			local function GetClosest(points, dest)
+				local min  = math.huge 
+				local closest = nil
+				for _,v in pairs(points) do
+					local dist = Dist(v, dest)
+					if dist < min then
+						min = dist
+						closest = v
+					end
+				end
+				return closest
+			end
+	
+			local function DrawESP(plr)
+				local Box = Drawing.new("Quad")
+				Box.Visible = false
+				Box.PointA = Vector2.new(0, 0)
+				Box.PointB = Vector2.new(0, 0)
+				Box.PointC = Vector2.new(0, 0)
+				Box.PointD = Vector2.new(0, 0)
+				Box.Color = Color3.fromRGB(255, 0, 0)
+				Box.Thickness = 2
+				Box.Transparency = 1
+	
+				local function Update()
+					local c
+					c = game:GetService("RunService").RenderStepped:Connect(function()
+						if plr.Character ~= nil and plr.Character:FindFirstChildOfClass("Humanoid") ~= nil and plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and plr.Character:FindFirstChildOfClass("Humanoid").Health > 0 and plr.Character:FindFirstChild("Head") ~= nil then
+							local pos, vis = Camera:WorldToViewportPoint(plr.Character.HumanoidRootPart.Position)
+							if vis then 
+								local points = {}
+								local c = 0
+								for _,v in pairs(plr.Character:GetChildren()) do
+									if v:IsA("BasePart") then
+										c = c + 1
+										local p = Camera:WorldToViewportPoint(v.Position)
+										if v.Name == "HumanoidRootPart" then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, 0, -v.Size.Z)).p)
+										elseif v.Name == "Head" then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, v.Size.Y/2, v.Size.Z/1.25)).p)
+										elseif string.match(v.Name, "Left") then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(-v.Size.X/2, 0, 0)).p)
+										elseif string.match(v.Name, "Right") then
+											p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(v.Size.X/2, 0, 0)).p)
+										end
+										points[c] = p
+									end
+								end
+								local Left = GetClosest(points, Vector2.new(0, pos.Y))
+								local Right = GetClosest(points, Vector2.new(Camera.ViewportSize.X, pos.Y))
+								local Top = GetClosest(points, Vector2.new(pos.X, 0))
+								local Bottom = GetClosest(points, Vector2.new(pos.X, Camera.ViewportSize.Y))
+	
+								if Left ~= nil and Right ~= nil and Top ~= nil and Bottom ~= nil then
+									Box.PointA = Vector2.new(Right.X, Top.Y)
+									Box.PointB = Vector2.new(Left.X, Top.Y)
+									Box.PointC = Vector2.new(Left.X, Bottom.Y)
+									Box.PointD = Vector2.new(Right.X, Bottom.Y)
+	
+									Box.Visible = true
+								else 
+									Box.Visible = false
+								end
+							else 
+								Box.Visible = false
+							end
+						else
+							Box.Visible = false
+							if game.Players:FindFirstChild(plr.Name) == nil then
+								c:Disconnect()
+							end
+						end
+					end)
+				end
+				coroutine.wrap(Update)()
+			end
+	
+			for _,v in pairs(game:GetService("Players"):GetChildren()) do
+				if v.Name ~= Player.Name then 
+					DrawESP(v)
+				end
+			end
+	
+			game:GetService("Players").PlayerAdded:Connect(function(v)
+				DrawESP(v)
+			end)
+		end)
+	end
+	
+	if game.PlaceId == 292439477 then
+		script.Parent.Visible = false
+		
+	end
+	
+	
+end
+coroutine.wrap(LCMC_fake_script)()
+local function NERZSSV_fake_script() -- TextButton_31.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_31)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(NERZSSV_fake_script)()
+local function XYGYPH_fake_script() -- TextButton_31.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_31)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(XYGYPH_fake_script)()
+local function CQEADP_fake_script() -- TextButton_31.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_31)
+
+	
+	if game.PlaceId == 155615604 then
+			script.Parent.Visible = true
+			script.Parent.Text = "Normal  Walkspeed"
+			script.Parent.MouseButton1Down:connect(function()
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+			end)
+		end
+	
+	
+	if game.PlaceId == 3587619225 then
+		script.Parent.Visible = false
+	end
+		
+	if game.PlaceId == 286090429 then
+		script.Parent.Visible = true
+		script.Parent.Text = "crtl+click tp"
+		script.Parent.MouseButton1Down:connect(function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/sQzads0f", true))()
+			
+		end)
+	end
+	
+	if game.PlaceId == 292439477 then
+		script.Parent.Visible = false
+	
+	end
+	
+	
+end
+coroutine.wrap(CQEADP_fake_script)()
+local function HPYMOD_fake_script() -- TextButton_32.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_32)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(HPYMOD_fake_script)()
+local function LGJPSG_fake_script() -- TextButton_32.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_32)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(LGJPSG_fake_script)()
+local function BBYW_fake_script() -- TextButton_32.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_32)
+
+	if game.PlaceId == 155615604 then
+		script.Parent.Visible = true
+		script.Parent.Text = "Fast  Walkspeed"
+		script.Parent.MouseButton1Down:connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+		end)
+	end
+	
+	if game.PlaceId == 3587619225 then
+		script.Parent.Visible = false
+	end
+	
+	if game.PlaceId == 286090429 then
+		script.Parent.Visible = false
+	end
+end
+coroutine.wrap(BBYW_fake_script)()
+local function XKSPJ_fake_script() -- TextButton_33.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_33)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(XKSPJ_fake_script)()
+local function TADU_fake_script() -- TextButton_33.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_33)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(TADU_fake_script)()
+local function FSJFXYS_fake_script() -- TextButton_33.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_33)
+
+	if game.PlaceId == 155615604 then
+		script.Parent.Visible = true
+		script.Parent.Text = "Aimbot e key"
+		script.Parent.MouseButton1Down:connect(function()
+			loadstring(game:HttpGet(('https://pastebin.com/raw/mSwLvQJW'), true))()
+	
+		end)
+	end
+	
+	
+	if game.PlaceId == 3587619225 then
+		script.Parent.Visible = false
+	end
+	
+	if game.PlaceId == 286090429 then
+		script.Parent.Visible = false
+	end
+	
+	if game.PlaceId == 292439477 then
+		script.Parent.Visible = false
+	
+	end
+end
+coroutine.wrap(FSJFXYS_fake_script)()
+local function UOXTC_fake_script() -- TextButton_34.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_34)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(UOXTC_fake_script)()
+local function NDZAOI_fake_script() -- TextButton_34.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_34)
+
+	
+	while true do
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BorderColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(NDZAOI_fake_script)()
+local function DZZECSI_fake_script() -- TextButton_34.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_34)
+
+	if game.PlaceId == 155615604 then
+		script.Parent.Visible = true
+		script.Parent.Text = "BTOOLS"
+		script.Parent.MouseButton1Down:connect(function()
+			local tool1   = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+			tool1.BinType = "Hammer"
+		end)
+	
+	
+		
+	end
+	
+	if game.PlaceId == 3587619225 then
+		script.Parent.Visible = false
+	end
+	
+	if game.PlaceId == 286090429 then
+		script.Parent.Visible = false
+	end
+	
+	if game.PlaceId == 292439477 then
+		script.Parent.Visible = false
+	
+	end
+end
+coroutine.wrap(DZZECSI_fake_script)()
+local function DGZNJWA_fake_script() -- TextLabel_6.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_6)
+
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+	
+end
+coroutine.wrap(DGZNJWA_fake_script)()
+local function HJNS_fake_script() -- TextLabel_6.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_6)
+
+	local Open = false
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			if Open then
+				script.Parent.Visible = true
+				Open = false
+			else
+				Open = true
+				script.Parent.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(HJNS_fake_script)()
+local function OXTE_fake_script() -- TextLabel_6.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_6)
+
+	script.Parent.Visible = false
+	
+end
+coroutine.wrap(OXTE_fake_script)()
+local function YLZSCV_fake_script() -- TextLabel_7.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_7)
+
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+	
+end
+coroutine.wrap(YLZSCV_fake_script)()
+local function JBMDIG_fake_script() -- TextLabel_7.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_7)
+
+	local Open = false
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			if Open then
+				script.Parent.Visible = true
+				Open = false
+			else
+				Open = true
+				script.Parent.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(JBMDIG_fake_script)()
+local function WHRRDLG_fake_script() -- TextLabel_7.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_7)
+
+	script.Parent.Visible = false
+	
+end
+coroutine.wrap(WHRRDLG_fake_script)()
+local function RYNBP_fake_script() -- TextLabel_8.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_8)
+
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+	
+end
+coroutine.wrap(RYNBP_fake_script)()
+local function JEYAB_fake_script() -- TextLabel_8.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_8)
+
+	local Open = false
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "p" then
+			if Open then
+				script.Parent.Visible = true
+				Open = false
+			else
+				Open = true
+				script.Parent.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(JEYAB_fake_script)()
+local function CPJUPQR_fake_script() -- TextLabel_8.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_8)
+
+	script.Parent.Visible = false
+	
+end
+coroutine.wrap(CPJUPQR_fake_script)()
+local function LZTMVXO_fake_script() -- TextLabel_9.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_9)
+
+	
+	while true do
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.TextColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(LZTMVXO_fake_script)()
+local function LFMW_fake_script() -- TextLabel_9.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_9)
+
+	local textLabel = script.Parent
+	
+	while wait(0.1) do
+		local fpsAmount = math.floor(workspace:GetRealPhysicsFPS())
+		textLabel.Text = "Reybox fps: "..fpsAmount
+	end
+	
+end
+coroutine.wrap(LFMW_fake_script)()
+local function ULLGP_fake_script() -- TextLabel_10.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_10)
+
+	while true do
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(ULLGP_fake_script)()
+local function GAIL_fake_script() -- TextLabel_11.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_11)
+
+	while true do
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 0.333333)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.0833333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.166667, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.333333, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.222222, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.666667, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.8755, 1, 0.666667)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.555111, 1, 0.498039)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.777778, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.5, 0.333333, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.166667, 1, 1)
+		wait(0.5)
+		script.Parent.BackgroundColor3 =
+			Color3.fromHSV(0.917, 1, 1)
+		wait(0.5)
+	
+	
+	end
+end
+coroutine.wrap(GAIL_fake_script)()
